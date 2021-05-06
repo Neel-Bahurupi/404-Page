@@ -180,7 +180,9 @@ button {
   font-family: "Space Mono", monospace;
   font-weight: 700;
 }
-
+button:hover{
+  cursor:pointer;
+}
 @media (max-width: 415px) {
   img {
     width: 286.83px !important;
