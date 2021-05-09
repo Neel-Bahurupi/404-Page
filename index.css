@@ -123,15 +123,14 @@ table {
   border-spacing: 0;
 }
 
-/* body {
-  height: 100vh;
-  width: 100vw;
-} */
-
 .main {
-  width: 80%;
-  height: 100%;
-  margin: 40px auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.title {
+  padding: 40px 0;
 }
 .title h1 {
   font-family: "Inconsolata", monospace;
@@ -184,14 +183,22 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 1075px) {
+  .main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
   img {
     width: 286.83px !important;
     height: 238px !important;
-    margin: 40px auto 0 auto;
+    margin: 0 auto 40px auto;
   }
   .info {
-    height: 100vh;
+    min-height: 500px;
   }
   .news {
     line-height: 1;
@@ -201,15 +208,9 @@ button:hover {
     font-size: 24px;
     width: 100%;
   }
-  .content {
-    flex-direction: column;
-    height: 120vh;
-    justify-content: space-between;
-  }
+
   button {
     width: 150px;
     height: 50px;
   }
 }
-/* 
-@media (min-width:414px) and (max-width:) */
